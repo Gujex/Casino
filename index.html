@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <title>Document</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+    />
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header class="d-flex justify-content-between align-items-center">
+    <div class="nav_controller">
+        <div>
+            <a href=#>Sports</a>
+        </div>
+        <div class="active_nav">
+            <a href=#>In-Play</a>
+        </div>
+        <div>
+            <a href=#>Casino</a>
+        </div>
+        <div>
+            <a href=#>Live Casino</a>
+        </div>
+        <div>
+            <a href=#>Virtual Sports</a>
+        </div>
+    </div>
+    <div>
+        <button class="join">Join</button>
+        <button class="login">Login</button>
+    </div>
+</header>
+<div class="game-options mt-3">
+    <div>
+        <div class="d-flex justify-content-between">
+            <img alt="banner" style="width: 620px; height: 210px; object-fit: cover"
+                 src="https://img.freepik.com/free-vector/glowing-golden-black-playing-cards-casino-banner-design_1017-32737.jpg?w=2000">
+            <img alt="banner" style="width: 620px; height: 210px; object-fit: cover"
+                 src="https://img.freepik.com/free-vector/glowing-golden-black-playing-cards-casino-banner-design_1017-32737.jpg?w=2000">
+        </div>
+    </div>
+    <div class="game-selection">
+        <div class=" up_info d-flex align-items-center">
+            <div class="all-games fw-bold active_game">all games
+                <span id="gamesCounter">(3399)</span>
+            </div>
+            <div>
+                <select class="all-providers-select">
+                    <option>All Providers</option>
+                </select>
+            </div>
+            <div class="search-input-parent">
+                <input id="search-input" placeholder=" search games...   &#xF002;"
+                       style="font-family:Arial, FontAwesome,serif">
+            </div>
+        </div>
+        <div class="active-category" id="categories">
+            <!--            content will appear here from js file-->
+        </div>
+    </div>
+    <div id="gameList">
+        <!--        GameContent will be mapped here from js file-->
+    </div>
+    <div class="w-100 d-flex justify-content-end mt-5">
+        <button id="next-button" class="btn btn-success ">next</button>
+    </div>
+</div>
+</body>
+<script type="module" src="main.js"></script>
+</html>
